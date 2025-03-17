@@ -1,5 +1,8 @@
 package org.generationitaly.todolist.controller;
 
-public class NotaServlet {
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+@WebServlet ("/tasks")
+public class NotaServlet extends HttpServlet {
 
 }
