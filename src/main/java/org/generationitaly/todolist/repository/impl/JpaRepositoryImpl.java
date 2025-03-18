@@ -3,7 +3,7 @@ package org.generationitaly.todolist.repository.impl;
 import java.util.List;
 
 import org.generationitaly.todolist.repository.*;
-import org.generationitaly.anagrafica.repository.impl.PersistenceUtil;
+import org.generationitaly.todolist.repository.impl.PersistenceUtil;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
