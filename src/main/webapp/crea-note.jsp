@@ -24,7 +24,7 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <div id="logo-nome">
-                <a class="navbar-brand" href="../">
+                <a class="navbar-brand" href="index.jsp">
                     <span class="logo-icon material-symbols-outlined d-inline-block align-text-top">
                         code
                     </span>
@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../">Homepage</a>
+                        <a class="nav-link active" aria-current="page" href="index.jsp">Homepage</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Chi siamo</a>
@@ -50,7 +50,7 @@
                             Note
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="note.html">Visualizza note</a></li>
+                            <li><a class="dropdown-item" href="note.jsp">Visualizza note</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -66,7 +66,7 @@
     <h1 class="testo-principale">Crea la tua nota personalizzata</h1>
 
     <!-- Form per l'inserimento del testo -->
-    <form id="form-nuova-nota" action="save-nota" method="post">
+    <form id="form-nuova-nota" action="note.jsp" method="post">
         <textarea id="input-testo-nuova-nota" name="testoNuovaNota" placeholder=""></textarea>
         <button class="pulsante-aggiungi-nota" type="submit">Aggiungi nota</button>
     </form>

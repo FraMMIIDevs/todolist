@@ -24,7 +24,7 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <div id="logo-nome">
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand" href="/">
                     <span class="logo-icon material-symbols-outlined d-inline-block align-text-top">
                         code
                     </span>
@@ -45,16 +45,16 @@
                         <a class="nav-link" href="#">Chi siamo</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Note
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="note.html">Visualizza note</a></li>
+                            <li><a class="dropdown-item" href="note.jsp">Visualizza note</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="crea-note.html">Crea note</a></li>
+                            <li><a class="dropdown-item" href="crea-note.jsp">Crea note</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -67,10 +67,10 @@
     
     <!-- Inizio pulsanti Visualizza/crea note -->
     <div class="pulsanti-homepage">
-        <a href="#">
+        <a href="note.jsp">
             <input type="button" value="Visualizza note" />
         </a>
-        <a href="crea-note.html">
+        <a href="crea-note.jsp">
             <input type="button" value="Crea nota" />
         </a>
     </div>
