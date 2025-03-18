@@ -37,7 +37,7 @@ public class Nota {
 		this.corpoTesto = corpoTesto;
 	}
 
-	public boolean isCompletata() {
+	public boolean getCompletata() {
 		return completata;
 	}
 
