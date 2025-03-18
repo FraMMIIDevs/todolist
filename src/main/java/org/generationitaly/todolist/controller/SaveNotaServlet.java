@@ -21,7 +21,10 @@ import jakarta.servlet.http.HttpSession;
 @WebServlet("/crea-note")
 public class SaveNotaServlet extends HttpServlet {
 
-	private NotaRepository notaRepository = NotaRepositoryImpl.getInstance();
+	private static final long serialVersionUID = 1L;
+
+	private NotaRepository notaRepository = new NotaRepositoryImpl();
+
 
 	/*- private ContattoRepository contattoRepository = ContattoRepositoryImpl.getInstance(); */
 	public SaveNotaServlet() {
@@ -32,6 +35,8 @@ public class SaveNotaServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		RequestDispatcher dispatcher = request.getRequestDispatcher("crea-note.jsp");
+	    dispatcher.forward(request, response);
 		System.out.println("method 'SaveNotaServlet.doGet(request, response)' invoked!");
 	}
 
@@ -49,7 +54,7 @@ public class SaveNotaServlet extends HttpServlet {
 
 		Nota nota = new Nota();
 		nota.setCorpoTesto(titolo);
-		nota.setCompletata(completata);
+		nota.setCompletata(true);
 
 		notaRepository.save(nota);
 		response.sendRedirect("nota");
