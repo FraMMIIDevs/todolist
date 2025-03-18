@@ -1,6 +1,8 @@
 package org.generationitaly.todolist.controller;
 
 import java.io.IOException;
+import org.generationitaly.todolist.repository.impl.NotaRepositoryImpl;
+import org.generationitaly.todolist.repository.NotaRepository;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -28,7 +30,7 @@ public class DeleteNotaServlet extends HttpServlet {
 			throws ServletException, IOException {
 		System.out.println("method 'DeleteNotaServlet.doPost(request, response)' invoked!");
 		// <input name="id" type="hidden" value="<%= persona.getId() %>">
-		int id = Integer.parseInt(request.getParameter("id"));
+		long id = Long.parseLong(request.getParameter("id"));
 		System.out.println("param 'id': " + id);
 		notaRepository.deleteById(id);
 		response.sendRedirect("nota");

@@ -5,7 +5,7 @@ import org.generationitaly.todolist.repository.NotaRepository;
 
 public class NotaRepositoryImpl extends JpaRepositoryImpl<Nota, Long> implements NotaRepository {
 
-	NotaRepositoryImpl() {
+	public NotaRepositoryImpl() {
 		super(Nota.class);
 	}
 
