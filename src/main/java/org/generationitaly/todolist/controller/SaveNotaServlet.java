@@ -47,14 +47,14 @@ public class SaveNotaServlet extends HttpServlet {
 		/*- <input id="input-nome" name="nome" type="text" placeholder="Mario"> */
 		String titolo = request.getParameter("corpoTesto");
 		/*- <input id="input-cognome" name="cognome" type="text" placeholder="Rossi"> */
-		String completata = request.getParameter("completata");
+		boolean completata = Boolean.parseBoolean(request.getParameter("completata"));
 
 		System.out.println("param 'titolo': " + titolo);
 		System.out.println("param 'completata': " + completata);
 
 		Nota nota = new Nota();
 		nota.setCorpoTesto(titolo);
-		nota.setCompletata(true);
+		nota.setCompletata(completata);
 
 		notaRepository.save(nota);
 		response.sendRedirect("nota");
