@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+html{
+    padding: 5px;
+}
+body.dark-theme{
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    font-family: 'Fredoka', sans-serif;
+    padding-top: 70px;
+}
+/*
+Styling per la navbar
+*/
+nav.navbar{
+    font-family: 'Fredoka', sans-serif;
+    box-shadow: 0 8px 10px hsl(0, 0%, 1%);
+    z-index: 10;
+    transition: all 3s ease;
+}
+nav.navbar:hover{
+    box-shadow: none;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    padding-right: 93.55px;
+    width: 100%;
+}
+.logo-icon{
+    margin-right: 5px;
+}
+.navbar-nav .nav-link:hover {
+    color: #f1c40f; 
+}
