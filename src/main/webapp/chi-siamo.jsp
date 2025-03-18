@@ -5,12 +5,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuova nota</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi siamo</title>
     <!-- Import stylesheet global -->
     <link rel="stylesheet" href="styles/global.css">
     <!-- Import stylesheet della pagina -->
-    <link rel="stylesheet" href="styles/crea-nota.css">
+    <link rel="stylesheet" href="styles/chi-siamo.css">
     <!-- Import bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Import logo -->
@@ -24,7 +24,7 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <div id="logo-nome">
-                <a class="navbar-brand" href="index.jsp">
+                <a class="navbar-brand" href="">
                     <span class="logo-icon material-symbols-outlined d-inline-block align-text-top">
                         code
                     </span>
@@ -39,10 +39,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.jsp">Homepage</a>
+                        <a class="nav-link" aria-current="page" href="">Homepage</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Chi siamo</a>
+                        <a class="nav-link active" href="#">Chi siamo</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
@@ -54,7 +54,7 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="">Crea note</a></li>
+                            <li><a class="dropdown-item" href="crea-note.jsp">Crea note</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -62,14 +62,10 @@
         </div>
     </nav>
 
-    <!-- Testo di benvenuto creazione nota -->
-    <h1 class="testo-principale">Crea la tua nota personalizzata</h1>
-
-    <!-- Form per l'inserimento del testo -->
-    <form id="form-nuova-nota" action="note.jsp" method="post">
-        <textarea id="input-testo-nuova-nota" name="testoNuovaNota" placeholder=""></textarea>
-        <button class="pulsante-aggiungi-nota" type="submit">Aggiungi nota</button>
-    </form>
+    <!-- Aggiunta immagine -->
+    <div class="container">
+        <img src="images/gruppo.jpg" width="500px">
+    </div>
 
     <!-- Inizio Footer -->
     <div class="container fixed-bottom" data-bs-theme="dark">
@@ -78,8 +74,11 @@
         </footer>
     </div>
 
+    <p class="chi-siamo">Siamo un team appassionato, impegnato a offrire soluzioni innovative che fanno la differenza. Con anni di esperienza nel settore, ci concentriamo sulla creazione di prodotti e servizi centrati sull'utente, che rispondano alle esigenze dei nostri clienti. La nostra missione è quella di evolverci continuamente e adattarci al panorama tecnologico in continua mutazione, assicurandoci di essere sempre un passo avanti e offrire un valore eccezionale. Al centro di tutto ciò che facciamo c'è una dedizione alla qualità, alla creatività e alla soddisfazione del cliente.</p>
+
     <!-- Import degli script javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/index.js" defer></script>
 
 </body>
 
