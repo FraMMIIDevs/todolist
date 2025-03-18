@@ -20,4 +20,29 @@ public class Nota {
 
 	@Column(name = "completata")
 	private boolean completata;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getCorpoTesto() {
+		return corpoTesto;
+	}
+
+	public void setCorpoTesto(String corpoTesto) {
+		this.corpoTesto = corpoTesto;
+	}
+
+	public boolean isCompletata() {
+		return completata;
+	}
+
+	public void setCompletata(boolean completata) {
+		this.completata = completata;
+	}
+
 }
